@@ -1,0 +1,60 @@
+site_name: Engineering Notes
+site_description: Electrical Engineering and Embedded Systems Notes
+site_author: Alex Lin
+
+theme:
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Data Structures:
+      - Data Structures Notes: data-structures/data-structure-notes.md
+      
+  - Digital Logic:
+      - Overview: digital-logic/index.md
+
+  - Embedded Systems:
+      - Overview: embedded/index.md
+
+  - Storage:
+      - Overview: storage/index.md
+
+  - Machine Learning:
+      - Overview: machine-learning/index.md
+
+  - Projects:
+      - Overview: projects/index.md
